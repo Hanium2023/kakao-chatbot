@@ -1,6 +1,7 @@
 const apiRouter = require('express').Router()
 
 apiRouter.post('/sayHello', function (req, res) {
+  const { userRequest } = req.body
   const utterance = userRequest.utterance
 
   const responseBody = {
