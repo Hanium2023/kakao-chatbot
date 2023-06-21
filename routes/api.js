@@ -1,7 +1,7 @@
 const apiRouter = require('express').Router()
 
 apiRouter.post('/sayHello', function (req, res) {
-  const utterance = jsonData.userRequest.utterance
+  const utterance = userRequest.utterance
 
   const responseBody = {
     version: '2.0',
