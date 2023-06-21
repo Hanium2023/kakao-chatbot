@@ -1,6 +1,7 @@
 const apiRouter = require('express').Router()
 
 apiRouter.post('/controlbulb', function (req, res) {
+  // 전등, 전구, 불빛 등 텍스트가 들어오면 실행
   const { userRequest } = req.body
   const utterance = userRequest.utterance
 
@@ -21,6 +22,7 @@ apiRouter.post('/controlbulb', function (req, res) {
 })
 
 apiRouter.post('/controlair', function (req, res) {
+  // 공기, 공기청정기, 탁하다 등 텍스트가 들어오면 실행
   const { userRequest } = req.body
   const utterance = userRequest.utterance
 
@@ -41,6 +43,7 @@ apiRouter.post('/controlair', function (req, res) {
 })
 
 apiRouter.post('/controlmonitor', function (req, res) {
+  // 채널, 소리, TV, 모니터 등 텍스트가 들어오면 실행
   const { userRequest } = req.body
   const utterance = userRequest.utterance
 
